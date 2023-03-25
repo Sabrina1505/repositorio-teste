@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/carro.vox-77fc9848126da097b110c0f1b946164b.mesh"
+
+[deps]
+
+source_file="res://carro.vox"
+dest_files=[ "res://.import/carro.vox-77fc9848126da097b110c0f1b946164b.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

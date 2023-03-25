@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/Chao 1.vox-e9c6ffe598c3d9d66f7c2678fa7d3e7a.mesh"
+
+[deps]
+
+source_file="res://Chao 1.vox"
+dest_files=[ "res://.import/Chao 1.vox-e9c6ffe598c3d9d66f7c2678fa7d3e7a.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

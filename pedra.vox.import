@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/pedra.vox-e2ce97e1c7d39f84c966e4ebd5c3189f.mesh"
+
+[deps]
+
+source_file="res://pedra.vox"
+dest_files=[ "res://.import/pedra.vox-e2ce97e1c7d39f84c966e4ebd5c3189f.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false

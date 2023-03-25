@@ -1,0 +1,423 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://skilklausklausklin.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Chao 1.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://carro.vox" type="ArrayMesh" id=3]
+[ext_resource path="res://pedra.vox" type="ArrayMesh" id=4]
+[ext_resource path="res://torre.vox" type="ArrayMesh" id=5]
+[ext_resource path="res://RigidBody.gd" type="Script" id=6]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.42414, 1, 1 )
+
+[sub_resource type="BoxShape" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.0659952, 0, -0.99782, 0, 1, 0, 0.99782, 0, 0.0659952, -1.9981, 1.86709, -1.6814 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1.761, 75.173, 51.376 )
+fov = 87.1875
+
+[node name="Chao 2" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 6.12855, 0.717376, 73.3457 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 2"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 2"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 2"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 2" type="MeshInstance" parent="Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.85103 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 2/Chao 2"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 2/Chao 2"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 2/Chao 2"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 2/Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 1" type="MeshInstance" parent="Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.6207 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 2/Chao 1"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.80535, 0.194927, -0.064575 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 2/Chao 1"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 2/Chao 1"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 2/Chao 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 2" type="MeshInstance" parent="Chao 2/Chao 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.85103 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 2/Chao 1/Chao 2"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 2/Chao 1/Chao 2"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 2/Chao 1/Chao 2"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 2/Chao 1/Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, -27.9326, 0.717376, 73.3457 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 3"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 3"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 3"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 2" type="MeshInstance" parent="Chao 3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.85103 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 3/Chao 2"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 3/Chao 2"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 3/Chao 2"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 3/Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 1" type="MeshInstance" parent="Chao 3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.6207 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 3/Chao 1"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 3/Chao 1"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 3/Chao 1"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 3/Chao 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 2" type="MeshInstance" parent="Chao 3/Chao 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.85103 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 3/Chao 1/Chao 2"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 3/Chao 1/Chao 2"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 3/Chao 1/Chao 2"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 3/Chao 1/Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 4" type="MeshInstance" parent="."]
+transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 39.827, 0.620474, 80.2704 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 4"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 4"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 4"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 2" type="MeshInstance" parent="Chao 4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.85103 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 4/Chao 2"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 4/Chao 2"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 4/Chao 2"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 4/Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 1" type="MeshInstance" parent="Chao 4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.6207 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 4/Chao 1"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 4/Chao 1"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 4/Chao 1"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 4/Chao 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 2" type="MeshInstance" parent="Chao 4/Chao 1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.85103 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 7" type="MeshInstance" parent="Chao 4/Chao 1/Chao 2"]
+transform = Transform( -0.99939, 0.00345471, 0.00513973, 0.346395, 0.999217, 0.191318, -0.00447475, 0.00192982, -0.999804, -1.93227, 0, -0.0411703 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 6" type="MeshInstance" parent="Chao 4/Chao 1/Chao 2"]
+transform = Transform( 0.99995, -0.000443816, -0.0089091, 0.0441176, 0.999986, -0.02981, 0.00892221, 0.000294154, 0.999956, 0.739748, 0, -0.109547 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 5" type="MeshInstance" parent="Chao 4/Chao 1/Chao 2"]
+transform = Transform( 0.999922, -0.00113978, -0.00502125, 0.112806, 0.999677, -0.227726, 0.00527918, 0.00227142, 0.999728, -1.57306, 0, -0.450998 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Chao 3" type="MeshInstance" parent="Chao 4/Chao 1/Chao 2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.579483, 0, -0.0131968 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -1.761, 75.173, 51.376 )
+light_color = Color( 0.0196078, 0.905882, 0.92549, 1 )
+shadow_enabled = true
+shadow_reverse_cull_face = true
+
+[node name="pedra" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.63316, 0.925114, 48.7603 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="pedra" type="MeshInstance" parent="pedra"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.77211, -0.0249288, -9.00002 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="pedra2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0058, 0.925114, 36.4248 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="pedra" type="MeshInstance" parent="pedra2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.63182, 0.175626, -10.1798 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="pedra2/pedra"]
+
+[node name="CollisionShape" type="CollisionShape" parent="pedra2/pedra/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0795226, 0 )
+shape = SubResource( 1 )
+
+[node name="pedra3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.31711, 0.573243, 65.924 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="pedra" type="MeshInstance" parent="pedra3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.77211, -0.0249288, -9.00002 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="pedra4" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1479, 1.2712, 65.8924 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="pedra" type="MeshInstance" parent="pedra4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.77211, -0.0249288, -9.00002 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="torre2" type="MeshInstance" parent="pedra4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.694, -0.353822, -5.90129 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="torre" type="MeshInstance" parent="pedra4/torre2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.86195, -4.76837e-07, 3.29342 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="torre3" type="MeshInstance" parent="pedra4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.7691, -0.353822, -12.47 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="torre4" type="MeshInstance" parent="pedra4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.32365, -0.283104, -11.657 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="torre5" type="MeshInstance" parent="pedra4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41518, -0.300506, -21.794 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="torre" type="MeshInstance" parent="pedra4/torre5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.79459, -0.116302, -33.6357 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="torre" type="MeshInstance" parent="pedra4/torre5/torre"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.33429, 0.135568, 7.98508 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="RigidBody" type="RigidBody" parent="pedra4"]
+script = ExtResource( 6 )
+
+[node name="carro" type="MeshInstance" parent="pedra4/RigidBody"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -18.7098, -0.431098, -64.3081 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="pedra4/RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.6159, -0.549749, -1183.85 )
+shape = SubResource( 2 )
+
+[node name="Movimentacao" type="Tween" parent="pedra4/RigidBody"]

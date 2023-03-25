@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://droid.vox" type="ArrayMesh" id=1]
+[ext_resource path="res://skilklausklausklin.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 3.36586, 5.3572, 2.34599 )
+
+[node name="Spatial" type="Area"]
+script = ExtResource( 2 )
+
+[node name="Movimentacao" type="Tween" parent="."]
+
+[node name="Direita" type="RayCast" parent="."]
+
+[node name="droid" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.61836, 0.264495, -0.253854 )
+mesh = ExtResource( 1 )
+material/0 = null
+
+[node name="Malha" type="MeshInstance" parent="."]
+
+[node name="Frente" type="RayCast" parent="."]
+
+[node name="Esquerda" type="RayCast" parent="."]
+
+[node name="Costas" type="RayCast" parent="."]
+
+[node name="Colisor" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="Rotacao" type="Tween" parent="."]

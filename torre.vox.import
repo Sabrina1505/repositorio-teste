@@ -1,0 +1,16 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions"
+type="Mesh"
+path="res://.import/torre.vox-b05ab371420b0774ee887606241830a1.mesh"
+
+[deps]
+
+source_file="res://torre.vox"
+dest_files=[ "res://.import/torre.vox-b05ab371420b0774ee887606241830a1.mesh" ]
+
+[params]
+
+Scale=0.1
+GreedyMeshGenerator=true
+SnapToGround=false
